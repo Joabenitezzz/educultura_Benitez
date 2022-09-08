@@ -261,10 +261,6 @@ footer{
 .gallery_item:nth-child(11) {
     grid-column-start: span 3;
 }
-.programaspages{
-    background-color: #f4a275;
-        background-image: linear-gradient(62deg, #f4a275 0%, #f4a261 50%, #fffb7d 100%); 
-}
 
 /* mobile */
 
