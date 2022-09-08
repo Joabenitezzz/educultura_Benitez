@@ -41,6 +41,10 @@ header{
     font-weight: 600;
     color: #f2f2f2;
     padding: 10px 20px;
+    transition: all 0.5s;
+}
+.menu-item:hover{
+    transform: scale(1.2);
 }
 .menu a{
     color: white;
@@ -150,6 +154,12 @@ header{
 }
 .img_programas{
     margin-left: 13%;
+}
+.img_programas img{
+    transition: all 1s;
+}
+.img_programas img:hover{
+    transform: scale(1.5);
 }
 footer{
     width: 100%;
