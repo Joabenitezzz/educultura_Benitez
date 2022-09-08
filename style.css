@@ -1,0 +1,371 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+}
+body{
+    background-color: #f1f2f6;
+}
+a{
+    text-decoration: none;
+}
+header{
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    padding: 3%;
+    align-items: center;
+    background-color: black;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+}
+.conteiner_logo_mobile {
+    display: none;
+}
+.menu_desplegable{
+    display: none;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.menu-item{
+    margin: 0 1rem;
+    font-weight: 600;
+    color: #f2f2f2;
+    padding: 10px 20px;
+}
+.menu a{
+    color: white;
+    font-weight: bold;
+}
+.menu ul{
+    transition: all 1s;
+}
+.img-principal{
+    width: 100%;
+    height: 56.25%;
+}
+.conoce-educultura{
+    color: white;
+    position: absolute;
+    top: 46%;
+    left: 16.5%;
+    font-weight: bold;
+    font-size: 80px;
+}
+.quienes_somos_txt{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #f4a261;
+    align-self: flex-start;
+    font-size: 300%;
+    margin-top: 4%;
+    margin-left: 2%;
+    width: 35%;
+    align-items: center;
+}
+.quienes_somos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+.quienes_somos p{
+    height: 319px;
+    width: 655px;
+    font-family: 'Varela Round', sans-serif;
+    padding: 2%;
+    margin-bottom: 5%;
+    font-size: large;
+    text-align: start;
+}
+.valores{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.valores article{
+    background-color: #f4a261;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    width: 25%;
+    padding: 3% 5%;
+}
+.valores p{
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+}
+.valores h3{
+    padding-left: 12%;
+}
+.equipo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.equipo article{
+    display: inline-block;
+    width: 25%;
+    margin: 4%;
+    margin-left: 8%;
+}
+.equipo p{
+    font-family: 'Varela Round', sans-serif;
+}
+.equipo article{
+    width: 20%;
+}
+.equipo img{
+    margin: 0 18%;
+}
+.equipo h3{
+    margin: 0 25%;
+}
+#programas h2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #f4a261;
+    align-self: flex-start;
+    font-size: 300%;
+    margin-top: 6%;
+    margin-bottom: 4%;
+    margin-left: 32%;
+    width: 35%;
+    align-items: center;
+}
+#programas img{
+    margin: 7%;
+}
+.img_programas{
+    margin-left: 13%;
+}
+footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: absolute;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 2%;
+}
+.box_footer{
+    display: flex;
+    padding: 0 5%;
+}
+.box_footer a{
+    color: white;
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.redes{
+    font-size: xx-large;
+    display: flex;
+    flex-direction: row;
+}
+.redes ul{
+    display: flex;
+    flex-direction: row;
+    margin: 10%;
+}
+.redes a{
+    color: white;
+}
+.titulo_galeria{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #f4a261;
+    align-self: flex-start;
+    font-size: 200%;
+    width: 100%;
+    align-items: center;
+    margin-top: 8%;
+}
+.como_colaborar_titulo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #f4a261;
+    align-self: flex-start;
+    font-size: 200%;
+    width: 100%;
+    align-items: center;
+    margin-top: 8%;
+}
+.como_colaborar_opciones{
+    display: flex;
+    flex-direction: row;
+}
+.como_colaborar_opciones article{
+    display: flex;
+    flex-direction: column;
+    background-color: #f4a261;
+    margin: 2% 2% 2% 1%;
+    padding: 2%;
+    align-items: center;
+}
+.como_colaborar_opciones article p{
+    font-family: 'Varela Round', sans-serif;
+}
+.paginas_programas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Varela Round', sans-serif;
+    padding: 1%;
+}
+.paginas_programas p{
+    padding: 1%;
+    width: 40%;
+}
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 150px;
+    padding: 20px;
+    grid-gap: 10px;
+}
+.gallery_item{
+    position: relative;
+}
+.gallery_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery_item:nth-child(5){
+    grid-column-start: span 2;
+}
+.gallery_item:nth-child(10) {
+    grid-column-end: span 2;
+}
+.gallery_item:nth-child(11) {
+    grid-column-start: span 3;
+}
+.programaspages{
+    background-color: #f4a275;
+        background-image: linear-gradient(62deg, #f4a275 0%, #f4a261 50%, #fffb7d 100%); 
+}
+
+/* mobile */
+
+@media screen and (max-width: 480px){
+    /*header*/
+    .conteiner_logo_mobile{
+        display: flex;
+    }
+    .conteiner_logo{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .menu_desplegable{
+        display: flex;
+        color: #f4a275;
+    }
+
+    /*footer*/
+    .box_footer {
+        display: none;
+    }
+    .footer{
+        justify-content: center;
+    }
+    .redes ul{
+        margin: 0;
+    }
+    .youtube{
+        margin-left: 20%;
+    }
+    .facebook{
+        margin-left: 20%;
+    }
+
+    /*index*/
+    .conteiner_conoce_educultura{
+        display: none;
+    }
+    .conteiner_quienes_somos_txt{
+        display: flex;
+        justify-content: center;
+    }
+    .quienes_somos_txt{
+        background-color: #f1f2f6;
+        font-size: 200%;
+        margin-left: 0;
+    }
+    .quienes_somos{
+        justify-content: center;
+        margin-bottom: 30%;
+    }
+    .quienes_somos p{
+        text-align: center;
+    }
+    .valores{
+        display: none;
+    }
+    .bg_equipo{
+        background-color: #f4a261;
+    }
+    .equipo{
+        margin-right: 11%;
+    }
+    .equipo article p{
+        display: none;
+    }
+    .programas_txt{
+        display: flex;
+        justify-content: center;
+    }
+    #programas h2{
+        background-color: #f1f2f6;
+        font-size: 200%;
+        margin-left: 0;
+    }
+    .img_programas{
+        width: 98%;
+        margin: 1%;
+        margin-left: 5%;
+    }
+
+    /*galería*/
+    .titulo_galeria{
+        display: none;
+    }
+    .gallery-container{
+        margin-top: 6%;
+    }
+
+    /*colaborar*/
+    .como_colaborar_titulo{
+        display: none;
+    }
+    .como_colaborar_opciones{
+        margin-top: 8%;
+    }
+
+    /*programas*/
+    .paginas_programas p {
+        width: 80%;
+    }
+}
