@@ -41,6 +41,10 @@ header{
     font-weight: 600;
     color: #f2f2f2;
     padding: 10px 20px;
+    transition: all 0.5s;
+}
+.menu-item:hover{
+    transform: scale(1.2);
 }
 .menu a{
     color: white;
@@ -151,6 +155,12 @@ header{
 .img_programas{
     margin-left: 13%;
 }
+.img_programas img{
+    transition: all 1s;
+}
+.img_programas img:hover{
+    transform: scale(1.5);
+}
 footer{
     width: 100%;
     background-color: black;
@@ -252,6 +262,7 @@ footer{
     height: 100%;
     object-fit: cover;
 }
+
 .gallery_item:nth-child(5){
     grid-column-start: span 2;
 }
@@ -261,12 +272,16 @@ footer{
 .gallery_item:nth-child(11) {
     grid-column-start: span 3;
 }
+.programaspages {
+    background-color: #f4a275;
+    background-image: linear-gradient(62deg, #f4a275 0%, #f4a261 50%, #fffb7d 100%);
+}
 
 /* mobile */
-
 @media screen and (max-width: 480px){
+
     /*header*/
-    .conteiner_logo_mobile{
+    .conteiner_logo_mobile {
         display: flex;
     }
     .conteiner_logo{
